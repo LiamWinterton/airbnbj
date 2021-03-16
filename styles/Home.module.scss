@@ -1,0 +1,18 @@
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	&__top {
+		padding: 2rem 0;
+		background: #2a2a2a;
+		text-align: center;
+
+		a {
+			color: #a3a3a3;
+		}
+	}
+}
