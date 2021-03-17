@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from "../styles/Home.module.scss"
 
+import Globe from "../assets/globe.svg"
+
 export default function Home() {
   return (
     <div id="airbnbj">
@@ -17,12 +19,18 @@ export default function Home() {
         </div>
         <div className={styles.header__bottom}>
           <div className={styles.container}>
-            <Image src="/logo-white.png" layout="intrinsic" width={290} height={60} priority={true}/>
+            <Image src="/logo-white.png" layout="fixed" width={290} height={60} priority={true}/>
             <ul className={styles.header__nav}>
               <li className={styles.header__nav__active}><a href="#">Places to stay</a></li>
               <li><a href="#">Experiences</a></li>
               <li><a href="#">Online Experiences</a></li>
             </ul>
+            <div className={styles.header__menu}>
+              <a className={styles.header__menu__button} href="#">Become a host</a>
+              <a className={styles.header__menu__button} href="#">
+                <Globe className={styles.svg} />
+              </a>
+            </div>
           </div>
         </div>
       </header>
