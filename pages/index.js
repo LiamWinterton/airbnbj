@@ -18,6 +18,11 @@ export default function Home() {
         <div className={styles.header__bottom}>
           <div className={styles.container}>
             <Image src="/logo-white.png" layout="intrinsic" width={290} height={60} priority={true}/>
+            <ul className={styles.header__nav}>
+              <li className={styles.header__nav__active}><a href="#">Places to stay</a></li>
+              <li><a href="#">Experiences</a></li>
+              <li><a href="#">Online Experiences</a></li>
+            </ul>
           </div>
         </div>
       </header>
